@@ -4,6 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FUTASU Judicial Council Swearing-In Dress Code</title>
+  <meta name="description" content="Official swearing-in dress code for the FUTA Students' Union Judicial Council, 2026/27 Parliamentary Session: accepted English and native attire and footwear for men and women, what is not permitted, and FAQs." />
+  <meta name="theme-color" content="#6B21A8" />
+  <link rel="canonical" href="https://joshuaxcel.github.io/dresscode-app/" />
+
+  <!-- Link previews (WhatsApp, X, Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FUTASU Judicial Council" />
+  <meta property="og:title" content="FUTASU Judicial Council Swearing-In Dress Code" />
+  <meta property="og:description" content="Accepted dress code for the 2026/27 Parliamentary Session swearing-in: men's and women's attire, footwear, not permitted and FAQs." />
+  <meta property="og:url" content="https://joshuaxcel.github.io/dresscode-app/" />
+  <meta property="og:image" content="https://joshuaxcel.github.io/dresscode-app/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FUTASU Judicial Council logo with the title Swearing-In Dress Code" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -20,7 +39,7 @@
   <section class="hero">
     <div class="hero-inner">
       <div class="logo-wrap">
-        <img src="jclogo.jpeg" alt="FUTASU Judicial Council Logo" class="jc-logo" onerror="this.style.display='none'" />
+        <img src="images/jclogo.jpeg" alt="FUTASU Judicial Council logo" class="jc-logo" width="110" height="110" fetchpriority="high" />
       </div>
       <p class="hero-eyebrow">Federal University of Technology, Akure Students' Union Judicial Council</p>
       <h1 class="hero-title">Swearing-In Ceremony</h1>
@@ -36,12 +55,12 @@
 
   <!-- TAB SWITCHER -->
   <div class="tab-bar-wrap">
-    <div class="tab-bar">
-      <button class="tab-btn active" data-target="men">
-        <span class="tab-icon">👔</span> Men
+    <div class="tab-bar" role="tablist" aria-label="Choose dress code">
+      <button type="button" class="tab-btn active" id="tab-men" data-target="men" role="tab" aria-selected="true" aria-controls="men">
+        <span class="tab-icon" aria-hidden="true">👔</span> Men
       </button>
-      <button class="tab-btn" data-target="women">
-        <span class="tab-icon">👗</span> Women
+      <button type="button" class="tab-btn" id="tab-women" data-target="women" role="tab" aria-selected="false" aria-controls="women" tabindex="-1">
+        <span class="tab-icon" aria-hidden="true">👗</span> Women
       </button>
     </div>
   </div>
@@ -50,9 +69,9 @@
   <main class="content">
 
     <!-- ===== MEN SECTION ===== -->
-    <section class="gender-section active" id="men">
+    <section class="gender-section active" id="men" role="tabpanel" aria-labelledby="tab-men">
       <div class="section-header">
-        <div class="section-icon">👔</div>
+        <div class="section-icon" aria-hidden="true">👔</div>
         <h2 class="section-title">Dress Code for Men</h2>
       </div>
 
@@ -69,32 +88,32 @@
           <li>Tie or bow tie is optional but encouraged.</li>
         </ul>
 
-        <div class="examples-label">Examples:</div>
+        <h3 class="examples-label">Examples:</h3>
         <div class="image-grid">
-          <div class="img-card">
-            <img src="formal_male.jpg" alt="Formal dress shirt" />
-            <span class="img-tag">Shirt without Tie</span>
-          </div>
-          <div class="img-card">
-            <img src="suit.jpg" alt="Corporate suit" />
-            <span class="img-tag">Corporate Suit</span>
-          </div>
-          <div class="img-card">
-            <img src="blazer.jpeg" alt="Blazer" />
-            <span class="img-tag">Blazer</span>
-          </div>
-          <div class="img-card">
-            <img src="waistcoat.jpeg" alt="Waistcoat" />
-            <span class="img-tag">Waistcoat</span>
-          </div>
-          <div class="img-card">
-            <img src="trouser.jpg" alt="Corporate Trouser" />
-            <span class="img-tag">Corporate Trouser</span>
-          </div>
-          <div class="img-card">
-            <img src="shirt_tie.jpg" alt="Shirt and tie" />
-            <span class="img-tag">Shirt & Tie</span>
-          </div>
+          <figure class="img-card">
+            <img src="images/formal_male.jpg" alt="Man in a long-sleeve dress shirt tucked into corporate trousers, no tie" width="545" height="1000" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Shirt without Tie</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/suit.jpg" alt="Man in a dark two-piece corporate suit" width="1000" height="560" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Corporate Suit</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/blazer.jpeg" alt="Man in a blazer over a dress shirt" width="1000" height="398" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Blazer</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/waistcoat.jpeg" alt="Man in a waistcoat worn over a dress shirt" width="1000" height="1000" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Waistcoat</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/trouser.jpg" alt="Well-fitted corporate trousers" width="1000" height="667" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Corporate Trouser</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/shirt_tie.jpg" alt="Man in a dress shirt and tie" width="1000" height="667" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Shirt & Tie</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -110,20 +129,20 @@
           <li>Any well-fitted, decent native attire.</li>
         </ul>
 
-        <div class="examples-label">Examples:</div>
+        <h3 class="examples-label">Examples:</h3>
         <div class="image-grid">
-          <div class="img-card">
-            <img src="agbada.jpg" alt="Agbada/Babariga" />
-            <span class="img-tag">Agbada/Babariga</span>
-          </div>
-          <div class="img-card">
-            <img src="senator.jpg" alt="Senator/Kaftan" />
-            <span class="img-tag">Senator/Kaftan Style</span>
-          </div>
-          <div class="img-card">
-            <img src="ankara.jpg" alt="Ankara corporate" />
-            <span class="img-tag">Ankara Corporate</span>
-          </div>
+          <figure class="img-card">
+            <img src="images/agbada.jpg" alt="Man in a flowing agbada (babariga) native outfit" width="1000" height="546" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Agbada/Babariga</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/senator.jpg" alt="Man in a senator (kaftan) native outfit" width="278" height="378" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Senator/Kaftan Style</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/ankara.jpg" alt="Man in a well-tailored Ankara corporate outfit" width="295" height="391" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Ankara Corporate</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -142,32 +161,32 @@
           <li>Sneakers &amp; Canvas (clean, presentable).</li>
         </ul>
 
-        <div class="examples-label">Examples:</div>
-        <div class="image-grid">
-          <div class="img-card">
-            <img src="oxford.jpeg" alt="Oxford/Derby shoes" />
-            <span class="img-tag">Oxford/Derby</span>
-          </div>
-          <div class="img-card">
-            <img src="brogues.jpg" alt="Loafers/Brogues" />
-            <span class="img-tag">Loafers/Brogues</span>
-          </div>
-          <div class="img-card">
-            <img src="halfshoe.jpg" alt="Half shoes" />
-            <span class="img-tag">Half Shoes</span>
-          </div>
-          <div class="img-card">
-            <img src="canvass.jpg" alt="Canvas/Sneakers" />
-            <span class="img-tag">Canvas/Sneakers</span>
-          </div>
+        <h3 class="examples-label">Examples:</h3>
+        <div class="image-grid footwear-grid">
+          <figure class="img-card">
+            <img src="images/oxford.jpeg" alt="Pair of leather Oxford/Derby lace-up shoes" width="1000" height="560" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Oxford/Derby</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/brogues.jpg" alt="Pair of leather brogue shoes" width="309" height="216" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Loafers/Brogues</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/halfshoe.jpg" alt="Pair of slip-on half shoes (mules)" width="453" height="386" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Half Shoes</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/canvass.jpg" alt="Pair of clean canvas sneakers" width="462" height="400" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Canvas/Sneakers</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
     <!-- WOMEN DRESS -->
-    <section class="gender-section" id="women">
+    <section class="gender-section" id="women" role="tabpanel" aria-labelledby="tab-women">
       <div class="section-header">
-        <div class="section-icon">👗</div>
+        <div class="section-icon" aria-hidden="true">👗</div>
         <h2 class="section-title">Dress Code for Women</h2>
       </div>
 
@@ -185,32 +204,32 @@
           <li>Blazer or jacket over any of the above is encouraged.</li>
         </ul>
 
-        <div class="examples-label">Examples:</div>
+        <h3 class="examples-label">Examples:</h3>
         <div class="image-grid">
-          <div class="img-card">
-            <img src="blouse.jpg" alt="Formal blouse" />
-            <span class="img-tag">Formal Blouse</span>
-          </div>
-          <div class="img-card">
-            <img src="chiffon.jpg" alt="Chiffon top" />
-            <span class="img-tag">Chiffon Top</span>
-          </div>
-          <div class="img-card">
-            <img src="skirtsuit.jpg" alt="Corporate skirt suit" />
-            <span class="img-tag">Skirt Suit</span>
-          </div>
-          <div class="img-card">
-            <img src="femaletrouser.jpg" alt="Corporate trouser" />
-            <span class="img-tag">Corporate Trouser</span>
-          </div>
-          <div class="img-card">
-            <img src="gown.jpg" alt="Corporate gown" />
-            <span class="img-tag">Corporate Gown</span>
-          </div>
-          <div class="img-card">
-            <img src="female_blazer.jpg" alt="Blazer outfit" />
-            <span class="img-tag">Blazer Outfit</span>
-          </div>
+          <figure class="img-card">
+            <img src="images/blouse.jpg" alt="Woman in a formal blouse" width="380" height="262" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Formal Blouse</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/chiffon.jpg" alt="Woman in a professional chiffon top" width="311" height="436" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Chiffon Top</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/skirtsuit.jpg" alt="Woman in a corporate skirt suit" width="1000" height="1000" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Skirt Suit</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/femaletrouser.jpg" alt="Woman in well-fitted corporate trousers" width="223" height="415" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Corporate Trouser</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/gown.jpg" alt="Woman in a knee-length corporate gown" width="221" height="394" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Corporate Gown</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/female_blazer.jpg" alt="Woman in a blazer outfit" width="1000" height="667" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Blazer Outfit</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -227,20 +246,20 @@
           <li>Any well-fitted, decent native attire.</li>
         </ul>
 
-        <div class="examples-label">Examples:</div>
+        <h3 class="examples-label">Examples:</h3>
         <div class="image-grid">
-          <div class="img-card">
-            <img src="nativegown.jpg" alt="Long Dress" />
-            <span class="img-tag">Native Gown</span>
-          </div>
-          <div class="img-card">
-            <img src="female_ankara.jpg" alt="Ankara corporate" />
-            <span class="img-tag">Ankara Corporate</span>
-          </div>
-          <div class="img-card">
-            <img src="lace.jpg" alt="Lace attire" />
-            <span class="img-tag">Lace Attire</span>
-          </div>
+          <figure class="img-card">
+            <img src="images/nativegown.jpg" alt="Woman in a long native gown" width="399" height="501" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Native Gown</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/female_ankara.jpg" alt="Woman in a well-tailored Ankara corporate outfit" width="290" height="398" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Ankara Corporate</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/lace.jpg" alt="Woman in a lace native outfit" width="278" height="403" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Lace Attire</figcaption>
+          </figure>
         </div>
       </div>
 
@@ -258,28 +277,28 @@
           <li>Corporate covered shoes (closed-toe).</li>
         </ul>
 
-        <div class="examples-label">Examples:</div>
-        <div class="image-grid">
-          <div class="img-card">
-            <img src="pumpheels.jpeg" alt="Pump Heels" />
-            <span class="img-tag">Pumps Heels</span>
-          </div>
-          <div class="img-card">
-            <img src="female_boots.jpg" alt="Corporate boots" />
-            <span class="img-tag">Corporate Boots</span>
-          </div>
-          <div class="img-card">
-            <img src="female_loafers.jpg" alt="Loafers" />
-            <span class="img-tag">Loafers</span>
-          </div>
-          <div class="img-card">
-            <img src="dressy_flat.jpg" alt="Dressy flats" />
-            <span class="img-tag">Dressy Flats</span>
-          </div>
-          <div class="img-card">
-            <img src="blockyheels.jpg" alt="Block heels" />
-            <span class="img-tag">Block Heels</span>
-          </div>
+        <h3 class="examples-label">Examples:</h3>
+        <div class="image-grid footwear-grid">
+          <figure class="img-card">
+            <img src="images/pumpheels.jpeg" alt="Pair of pump heels" width="1000" height="667" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Pump Heels</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/female_boots.jpg" alt="Pair of women's corporate boots" width="510" height="281" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Corporate Boots</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/female_loafers.jpg" alt="Pair of women's loafers" width="487" height="336" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Loafers</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/dressy_flat.jpg" alt="Pair of dressy flat shoes" width="502" height="276" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Dressy Flats</figcaption>
+          </figure>
+          <figure class="img-card">
+            <img src="images/blockyheels.jpg" alt="Pair of block-heel shoes" width="482" height="290" loading="lazy" decoding="async" />
+            <figcaption class="img-tag">Block Heels</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -287,21 +306,21 @@
     <!-- NOT ALLOWED SECTION -->
     <section class="not-allowed-section">
       <h2 class="not-allowed-title">Not Permitted</h2>
-      <div class="not-allowed-grid">
-        <div class="not-allowed-item">
-          <span class="x-icon">✕</span>
+      <div class="not-allowed-grid" role="list">
+        <div class="not-allowed-item" role="listitem">
+          <span class="x-icon" aria-hidden="true">✕</span>
           <span>Slippers &amp; Palm Sandals</span>
         </div>
-        <div class="not-allowed-item">
-          <span class="x-icon">✕</span>
+        <div class="not-allowed-item" role="listitem">
+          <span class="x-icon" aria-hidden="true">✕</span>
           <span>Jeans or Shorts</span>
         </div>
-        <div class="not-allowed-item">
-          <span class="x-icon">✕</span>
+        <div class="not-allowed-item" role="listitem">
+          <span class="x-icon" aria-hidden="true">✕</span>
           <span>Casual Wear</span>
         </div>
-        <div class="not-allowed-item">
-          <span class="x-icon">✕</span>
+        <div class="not-allowed-item" role="listitem">
+          <span class="x-icon" aria-hidden="true">✕</span>
           <span>Indecent Appearance</span>
         </div>
       </div>
@@ -318,17 +337,15 @@
       </ul>
     </section>
 
-  </main>
-
   <!--ABOUT-->
   <section class="notes-section" id="about">
   <h2 class="notes-title">About</h2>
-  <p style="font-size:0.93rem; color: var(--text); line-height:1.7;">
+  <p class="about-text">
     The Ethics and Disciplinary Committee (EDC) of the FUTASU Judicial Council
     is responsible for upholding standards of conduct and appearance at all
     official Students' Union functions, including the Swearing-In Ceremony.
     This dress code guide was created to help all elected officials and
-    electoral representatives dress appropriately for the 26/27 parliamentary session.
+    electoral representatives dress appropriately for the 2026/27 Parliamentary Session.
   </p>
 </section>
 
@@ -338,49 +355,51 @@
   <div class="faq-list">
 
     <div class="faq-item">
-      <button class="faq-question">I don't have my ID card. What do I do?</button>
-      <div class="faq-answer">Come along with your approved course form as a valid alternative.</div>
+      <button type="button" class="faq-question" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">I don't have my ID card. What do I do?</button>
+      <div class="faq-answer" id="faq-a1" role="region" aria-labelledby="faq-q1">Come along with your approved course form as a valid alternative.</div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question">Can I show an e-copy or picture of my ID card on my phone?</button>
-      <div class="faq-answer">No. Only your physical school ID card or approved course form is accepted.</div>
+      <button type="button" class="faq-question" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">Can I show an e-copy or picture of my ID card on my phone?</button>
+      <div class="faq-answer" id="faq-a2" role="region" aria-labelledby="faq-q2">No. Only your physical school ID card or approved course form is accepted.</div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question">Are sneakers allowed?</button>
-      <div class="faq-answer">Yes, clean and presentable sneakers and canvas are permitted for men under the English dress code.</div>
+      <button type="button" class="faq-question" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">Are sneakers allowed?</button>
+      <div class="faq-answer" id="faq-a3" role="region" aria-labelledby="faq-q3">Yes, clean and presentable sneakers and canvas are permitted for men under the English dress code.</div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question">Can I wear jeans if they are corporate-looking?</button>
-      <div class="faq-answer">No. Jeans are not permitted regardless of style or colour.</div>
+      <button type="button" class="faq-question" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">Can I wear jeans if they are corporate-looking?</button>
+      <div class="faq-answer" id="faq-a4" role="region" aria-labelledby="faq-q4">No. Jeans are not permitted regardless of style or colour.</div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question">Is native wear allowed for women?</button>
-      <div class="faq-answer">Yes. Decent, well-fitted native attire is accepted for women.</div>
+      <button type="button" class="faq-question" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">Is native wear allowed for women?</button>
+      <div class="faq-answer" id="faq-a5" role="region" aria-labelledby="faq-q5">Yes. Decent, well-fitted native attire is accepted for women.</div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question">What happens if I come in the wrong dress code?</button>
-      <div class="faq-answer">Strict punitive measures may be enforced as deemed fit by the Court.</div>
+      <button type="button" class="faq-question" id="faq-q6" aria-expanded="false" aria-controls="faq-a6">What happens if I come in the wrong dress code?</button>
+      <div class="faq-answer" id="faq-a6" role="region" aria-labelledby="faq-q6">Strict punitive measures may be enforced as deemed fit by the Court.</div>
     </div>
 
     <div class="faq-item">
-      <button class="faq-question">Who do I contact if I have more questions?</button>
-      <div class="faq-answer">Reach out to the EDC Chairperson directly via WhatsApp using the Contact Us link below.</div>
+      <button type="button" class="faq-question" id="faq-q7" aria-expanded="false" aria-controls="faq-a7">Who do I contact if I have more questions?</button>
+      <div class="faq-answer" id="faq-a7" role="region" aria-labelledby="faq-q7">Reach out to the EDC Chairperson directly via WhatsApp using the Contact Us link below.</div>
     </div>
 
   </div>
 </section>
-  
+
+  </main>
+
   <!-- FOOTER -->
   <footer class="site-footer">
     <p class="footer-org">FUTASU Judicial Council</p>
     <p class="footer-sub">Ethics and Disciplinary Committee</p>
     <div class="footer-links">
-      <a href="https://wa.me/2348166908936" target="_blank">Contact Us</a>
+      <a href="https://wa.me/2348166908936" target="_blank" rel="noopener noreferrer" aria-label="Contact Us on WhatsApp (opens in a new tab)">Contact Us</a>
       <a href="#about">About</a>
       <a href="#faq">FAQs</a>
     </div>
@@ -388,8 +407,8 @@
   </footer>
 
   <!-- BACK TO TOP -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
